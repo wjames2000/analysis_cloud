@@ -22,7 +22,6 @@ func AdapterError(err error) (code int, msg string) {
 	return 0, "success"
 }
 
-
 /**
 * @Purpose:
 * 获取文件后缀名
@@ -37,4 +36,3 @@ func GetFileExt(fn string) string {
 	fileSuffix = path.Ext(filenameWithSuffix)
 	return fileSuffix
 }
-

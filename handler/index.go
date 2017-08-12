@@ -1,13 +1,12 @@
 package handler
 
 import (
-	"github.com/henrylee2cn/faygo"
+	u "analysis_cloud/units"
 	"fmt"
+	"github.com/henrylee2cn/faygo"
 	"github.com/henrylee2cn/faygo/ext/uuid"
 	"strings"
-	u "analysis_cloud/units"
 )
-
 
 type UploadJson struct {
 	Code      int64  `json:"code"`
@@ -57,4 +56,3 @@ func UploadFile() faygo.HandlerFunc {
 		return c.JSON(200, uj, false)
 	}
 }
-
